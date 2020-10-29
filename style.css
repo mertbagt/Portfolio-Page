@@ -1,0 +1,84 @@
+/* background image for index page */
+.backimage {
+  position: relative;
+  color: black;
+}
+
+.top-center, .center {
+  position: absolute;
+  transform: translate(-50%, -50%);  
+}
+
+/* image text at the top and centered */
+.top-center {
+  top: 10%;
+  left: 50%;
+}
+
+/* image text next to window */
+.center {
+  top: 40%;
+  left: 45%;
+}
+
+/* photo attribution placement 
+https://www.pexels.com/license/
+*/
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* major sections */
+body {
+  background-color: #01707d;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+  background-color: lightblue;
+}
+
+main div {
+  height: auto;
+  border: 1px solid black;
+}
+
+.contact-container {
+  background-color: #F8F4E3;
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  height: auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* sub elements */
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 42px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 26px;
+}
+
+article p {
+  margin-left: 5%;
+  padding-left: 10%;
+}
+
+ol {
+  margin-left: 6%;
+  padding-left: 12%;
+}
+
+/* link styles */
+a:link    { color: #01707d; }
+a:visited { color: #1993C8; }
+a:hover   { color: #38023B; }
+a:active  { color: #B33F62; }
