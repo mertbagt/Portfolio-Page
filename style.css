@@ -1,39 +1,42 @@
-/* background image for index page */
-.backimage {
-  position: relative;
-  color: black;
-}
-
-.top-center, .center {
-  position: absolute;
-  transform: translate(-50%, -50%);  
-}
-
-/* image text at the top and centered */
-.top-center {
-  top: 10%;
-  left: 50%;
-}
-
-/* image text next to window */
-.center {
-  top: 40%;
-  left: 45%;
-}
-
-/* photo attribution placement 
-https://www.pexels.com/license/
-*/
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
-
-/* major sections */
+/* general */
 body {
   background-color: #01707d;
   font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #F8F4E3;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 42px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #F8F4E3;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
 }
 
 main {
@@ -41,8 +44,17 @@ main {
 }
 
 main div {
-  height: auto;
+  height: auto;  
+  padding-bottom: 5%;
+}
+
+.border {
+
   border: 1px solid black;
+}
+
+section {
+  margin: 2%;
 }
 
 .contact-container {
@@ -56,29 +68,68 @@ main div {
   border-bottom: 1px solid black;
 }
 
-/* sub elements */
-h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 42px;
-}
-
 h2 {
   text-align: center;
   font-size: 26px;
 }
 
-section p {
-  margin-left: 5%;
-  padding-left: 10%;
+img {
+  width: 100%;
 }
 
-ol {
-  margin-left: 6%;
-  padding-left: 12%;
+/* groups */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.item {
+  flex: 1;
+  margin: 10px;
 }
 
-/* link styles */
-a:link    { color: #01707d; }
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* link styles 
+a:link    { color:#000; }
 a:visited { color: #1993C8; }
 a:hover   { color: #38023B; }
 a:active  { color: #B33F62; }
+*/
+
+
+/* responsive media code */
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+
+  section  {
+    margin-left: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}  
