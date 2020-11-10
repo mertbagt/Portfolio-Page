@@ -147,8 +147,7 @@ form input[type=text] {
   }
 
   img {
-    width: auto;
-    min-width: 0;
+    width: unset; 
   } 
 
   .group {
