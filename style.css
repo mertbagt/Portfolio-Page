@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* general */
 body {
   background-color: #01707d;
@@ -6,7 +10,9 @@ body {
 }
 
 header {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background-color: #01707d;
 }
 
 header h1 {
@@ -56,6 +62,10 @@ section {
   margin: 2%;
 }
 
+article {
+  padding: 0 10px;
+}
+
 .contact-container {
   background-color: #F8F4E3;
   padding-top: 1px;
@@ -75,6 +85,16 @@ h2 {
 img {
   width: 100%;
 } 
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + main {
+  padding-top: 60px;
+}
 
 /* groups */
 .group {
@@ -152,6 +172,10 @@ form input[type=text] {
 
   .group {
     flex-direction: row;
+  }
+
+  section article.group {
+    justify-items: space-around;
   }
 
   .trail {
