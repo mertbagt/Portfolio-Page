@@ -10,9 +10,9 @@ body {
 }
 
 header {
-  margin-bottom: 15px;
   overflow: hidden;
   background-color: #01707d;
+  margin-bottom: -20px;
 }
 
 header h1 {
@@ -55,7 +55,9 @@ main div {
 }
 
 .border {
-  border: 1px solid black;
+  border-right-style: 1px solid black;
+  border-bottom-style: 1px solid black;
+  border-left-style: 1px solid black;
 }
 
 section {
@@ -90,10 +92,11 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
+  margin-bottom: 0;
 }
 
 .sticky + main {
-  padding-top: 60px;
+  padding-top: 124px;
 }
 
 /* groups */
@@ -139,12 +142,13 @@ form input[type=text] {
 }
 
 /* responsive media code */
-@media all and (min-width: 600px) {
+@media all and (min-width: 660px) {
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
+    margin-bottom: -20px;
   }
 
   header h1 {
@@ -158,6 +162,10 @@ form input[type=text] {
 
   header nav ul li a:hover {
     color: #bdbdbd;
+  }
+
+  .sticky + main {
+    padding-top: 60px;
   }
 
   section  {
