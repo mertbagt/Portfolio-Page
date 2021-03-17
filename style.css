@@ -134,10 +134,16 @@ form input[type=text] {
 }
 
 .desc {
-  height: 200px;
+  height: 300px;
 }
 
 /* responsive media code */
+@media all and (min-width: 400px) {
+  .desc {
+    height: 250px;
+  }
+}
+
 @media all and (min-width: 660px) {
   header {
     display: flex;
@@ -167,12 +173,6 @@ form input[type=text] {
     padding-top: 75px;
   }
 
-  section  {
-    margin-left: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
   img {
     width: unset; 
   } 
@@ -198,5 +198,9 @@ form input[type=text] {
   textarea {
     height: 150px;
     margin-left: 5px;
+  }
+
+  .desc {
+    height: 200px;
   }
 }  
