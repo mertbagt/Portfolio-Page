@@ -133,6 +133,10 @@ form input[type=text] {
   padding: 5px;
 }
 
+.desc {
+  height: 200px;
+}
+
 /* responsive media code */
 @media all and (min-width: 660px) {
   header {
@@ -165,8 +169,8 @@ form input[type=text] {
 
   section  {
     margin-left: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   img {
@@ -175,6 +179,7 @@ form input[type=text] {
 
   .group {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   section article.group {
