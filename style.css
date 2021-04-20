@@ -49,25 +49,31 @@ header nav ul li:last-child a {
 
 main {
   background-color: lightblue;
-}
-
-main div {
-  height: auto;  
   padding-bottom: 5%;
 }
 
-.border {
-  border-right-style: 1px solid black;
-  border-bottom-style: 1px solid black;
-  border-left-style: 1px solid black;
-}
-
 section {
-  margin: 2%;
+  margin: 1%;
 }
 
 article {
   padding: 0 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 26px;
+  
+}
+
+img {
+  width: 100%;
+} 
+
+.border {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
 }
 
 .contact-container {
@@ -81,17 +87,10 @@ article {
   border-bottom: 1px solid black;
 }
 
-h2 {
-  text-align: center;
-  font-size: 26px;
-  padding-top: 118px;
+.desc, .desc2 {
+  padding: 0 0 10px 0;
 }
 
-img {
-  width: 100%;
-} 
-
-/* groups */
 .group {
   display: flex;
   flex-direction: column;
@@ -104,46 +103,11 @@ img {
   flex: 2;
 }
 
-form label {
-  font-size: 18px;
-  margin-bottom: 5px;
-  font-family: arial;
-}
-
-form input[type=text] {
-  color: #000;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.block {
-  display: block;
-}
-
-textarea {
-  width: 90%;
-  height: 300px;
-}
-
-form input[type=text] {
-  width: 200px;
-}
-
-.submit-button {
-  padding: 5px;
-}
-
-.desc {
-  height: 300px;
+.spacing {
+  padding-top: 118px;
 }
 
 /* responsive media code */
-@media all and (min-width: 400px) {
-  .desc {
-    height: 250px;
-  }
-}
-
 @media all and (min-width: 660px) {
   header {
     display: flex;
@@ -170,7 +134,7 @@ form input[type=text] {
   }
 
   h2 {
-    padding-top: 75px;
+    
   }
 
   img {
@@ -186,21 +150,54 @@ form input[type=text] {
     justify-items: space-around;
   }
 
+  .spacing {
+    padding-top: 75px;
+  }
+
   .trail {
     margin: 2px 25px;
     align-items: center;
   }
+}
 
-  label {
-    padding: 5px;
-  }
+@media all and (min-width: 850px) {
+  .desc2 {
+    height: 330px;
+  } 
+}
 
-  textarea {
-    height: 150px;
-    margin-left: 5px;
-  }
+@media all and (min-width: 891px) {
+  .desc2 {
+    height: 315px;
+  } 
+}
 
+@media all and (min-width: 956px) {
+  .desc2 {
+    height: 270px;
+  } 
+}
+
+@media all and (min-width: 1040px) {
+  .desc2 {
+    height: 215px;
+  } 
+}
+
+@media all and (min-width: 1061px) {
   .desc {
     height: 200px;
-  }
-}  
+  } 
+}
+
+@media all and (min-width: 1162px) {
+  .desc2 {
+    height: 200px;
+  } 
+}
+
+@media all and (min-width: 1580px) {
+  .desc2 {
+    height: 175px;
+  } 
+}
