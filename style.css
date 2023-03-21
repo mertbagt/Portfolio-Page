@@ -18,11 +18,11 @@ header {
 }
 
 header h1 {
-  color: #F8F4E3;
+  color: #f8f4e3;
   text-align: center;
   margin: 0;
   padding-top: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 42px;
 }
 
@@ -38,7 +38,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: #F8F4E3;
+  color: #f8f4e3;
   text-decoration: none;
   margin: 0 20px 0 0;
 }
@@ -63,12 +63,11 @@ article {
 h2 {
   text-align: center;
   font-size: 26px;
-  
 }
 
 img {
   width: 100%;
-} 
+}
 
 .border {
   border-right: 1px solid black;
@@ -77,7 +76,7 @@ img {
 }
 
 .contact-container {
-  background-color: #F8F4E3;
+  background-color: #f8f4e3;
   padding-top: 1px;
   padding-left: 10px;
   padding-bottom: 5px;
@@ -87,14 +86,11 @@ img {
   border-bottom: 1px solid black;
 }
 
-.desc, .desc2 {
-  padding: 0 0 10px 0;
-}
-
-.group {
+.flex-group {
   display: flex;
   flex-direction: column;
 }
+
 .item {
   flex: 1;
 }
@@ -117,7 +113,7 @@ img {
     position: fixed;
     top: 0;
     width: 100%;
-    margin-bottom: -150px
+    margin-bottom: -150px;
   }
 
   header h1 {
@@ -133,20 +129,37 @@ img {
     color: #bdbdbd;
   }
 
-  h2 {
-    
+  img {
+    width: unset;
   }
 
-  img {
-    width: unset; 
-  } 
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 15px;
+  }
 
-  .group {
+  .item3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .item6 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+
+  .flex-group {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  section article.group {
+  section article.flex-group {
     justify-items: space-around;
   }
 
@@ -158,46 +171,4 @@ img {
     margin: 2px 25px;
     align-items: center;
   }
-}
-
-@media all and (min-width: 850px) {
-  .desc2 {
-    height: 330px;
-  } 
-}
-
-@media all and (min-width: 891px) {
-  .desc2 {
-    height: 315px;
-  } 
-}
-
-@media all and (min-width: 956px) {
-  .desc2 {
-    height: 270px;
-  } 
-}
-
-@media all and (min-width: 1040px) {
-  .desc2 {
-    height: 215px;
-  } 
-}
-
-@media all and (min-width: 1061px) {
-  .desc {
-    height: 200px;
-  } 
-}
-
-@media all and (min-width: 1162px) {
-  .desc2 {
-    height: 200px;
-  } 
-}
-
-@media all and (min-width: 1580px) {
-  .desc2 {
-    height: 175px;
-  } 
 }
