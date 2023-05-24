@@ -10,7 +10,6 @@ body {
 }
 
 header {
-  overflow: hidden;
   background-color: #01707d;
   position: fixed;
   top: 0;
@@ -53,7 +52,11 @@ main {
 }
 
 section {
-  margin: 1%;
+  margin: 10px;
+}
+
+.section-top {
+  margin-top: 0px;
 }
 
 article {
@@ -67,6 +70,11 @@ h2 {
 
 img {
   max-width: 100%;
+}
+
+.about {
+  position: relative;
+  top: -127px;
 }
 
 .border {
@@ -99,8 +107,18 @@ img {
   flex: 2;
 }
 
+.mapleWidth {
+  max-width: 832px;
+}
+
+.projects {
+  position: relative;
+  top: -140px;
+}
+
 .spacing {
-  padding-top: 118px;
+  margin-top: 0px;
+  padding-top: 139.58px;
 }
 
 .trail-desc {
@@ -137,6 +155,11 @@ img {
     color: #bdbdbd;
   }
 
+  .about {
+    position: relative;
+    top: -85px;
+  }
+
   /* img {
     width: unset;
   } */
@@ -146,12 +169,17 @@ img {
     flex-wrap: wrap;
   }
 
+  .projects {
+    position: relative;
+    top: -99px;
+  }
+
   section article.flex-group {
     justify-items: space-around;
   }
 
   .spacing {
-    padding-top: 75px;
+    padding-top: 80px;
   }
 }
 

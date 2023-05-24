@@ -29,11 +29,11 @@
     </header>
 
     <main class="border">
-      <div>
-        <section>
+      <div id="Intro">
+        <section class="section-top">
           <!-- 1st main content portion -->
-          <h2 class="spacing" id="Intro">Brief Intro</h2>
-          <p id="About">
+          <h2 class="spacing">Brief Intro</h2>
+          <p>
             I am a budding programmer eager to hone my skills. I live in
             Northern Virginia, a short ways from Washington D.C. I bring a
             degree of trusted professionalism to the team having held various
@@ -41,6 +41,7 @@
           </p>
         </section>
         <hr />
+        <span class="about" id="About"></span>
         <h2>About Me</h2>
         <section class="flex-group">
           <!-- 2nd main content portion -->
@@ -97,7 +98,6 @@
             </ol>
           </div>
           <div class="item flex-group">
-            <!-- <h2>&nbsp;</h2> -->
             <img
               src="images/trail-chalk.jpg"
               alt="Chalk Message on Trail"
@@ -107,12 +107,13 @@
         </section>
         <hr />
         <section>
-          <h2 id="Projects">Project Section</h2>
+          <span class="projects" id="Projects"></span>
+          <h2>Project Section</h2>
           <div class="">
             <article class="item-double">
               <div class="">
                 <h4>Massachusetts Platform for Legislative Engagement</h4>
-                <p>
+                <p class="mapleWidth">
                   MAPLE (the Massachusetts Platform for Legislative Engagement)
                   makes it easy for residents to submit their testimony to the
                   MA legislature and read the testimony of others. Our goals are
@@ -127,7 +128,11 @@
                 <p>( HTML / CSS / JavaScript / React / Python / Flask )</p>
               </div>
               <div>
-                <img src="images/maple.png" alt="App Demo Screenshot" /><br />
+                <img
+                  src="images/maple.png"
+                  alt="App Demo Screenshot"
+                  width="832"
+                /><br />
                 <a href="https://www.mapletestimony.org/" target="_blank"
                   >Live App</a
                 ><br />
@@ -260,7 +265,7 @@
               <h4>Librarian</h4>
               <div class="">
                 <!-- class reserved for spacing if another project is added -->
-                <p>
+                <p class="mapleWidth">
                   App allows a librarian to manage a collection of books and
                   track which patron they are checked out to. Future expansions
                   include tracking dates, late fees and a patron interface.
