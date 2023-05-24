@@ -129,6 +129,29 @@ img {
   margin: auto;
 }
 
+.website-counter-container {
+  margin-left: 40px;
+  width: 80px;
+}
+
+.website-counter-container,
+.website-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.website-counter {
+  background-color: #b33f62;
+  height: 50px;
+  width: 80px;
+  color: white;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
 /* responsive media code */
 @media all and (min-width: 660px) {
   header {
